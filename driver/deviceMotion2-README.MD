@@ -4,20 +4,18 @@ README -  Browser Device Motion Driver for SensorAPI
 In SensorAPI.js when the onDeviceAdded is invoked and this driver is included. Every new found device will be passed to the SensorAPI.js-Interface 'onDevicAdded'
 
 This driver provides a device with the sensors:
-- accelerometer
+- accelerometerIncludingGravity
 - rotationRate
 
-
-accelerometer
+accelerometerIncludingGravity
 -----------------------
-Allows you to get the acceleration value without gravity.
+Allows you to get the acceleration value including gravity.
 If a callback is passed, an object will be passed to and be accessed like this:
 ```javascript
-  sensors.accelerometer.subscribe(function(data) {
-    console.log("Value x: " + data.x + " value y: " + data.y + " value z: " + data.z);
-  });
+sensors.accelerometerIncludingGravity.subscribe(function(data) {
+  console.log("Value x: " + data.x + " value y: " + data.y + " value z: " + data.z);
+});
 ```
-
 
 rotationRate
 -----------------------
