@@ -341,4 +341,4 @@ This is a complete simple driver with virtual devices and sensors.
 # Authors
 -------
 
-* Developer: Anton Truong <antont86@gmail.com>
+* Anton Truong <truong@teco.edu>
